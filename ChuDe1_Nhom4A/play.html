@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Game</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    canvas {
+      display: block;
+      background-image: url('./images/3.jpg');
+    }
+  </style>
+  <script>
+    function NhacNen(){
+       //sự kiện Nhạc nền 
+       const audio2 = document.querySelector("#audio");
+      audio2.autoPlay = true;
+      audio2.volume = 1;
+      audio2.load();
+    }
+  </script>
+</head>
+<body onload="NhacNen()">
+  <canvas id="game" width="640" height="500">
+  </canvas>
+  <script src="main.js"></script>
+  <audio id="chatAudio" autoplay>
+    <source src="./Radio/nhay.mp3" type="audio/mpeg">
+</audio>
+<audio id="chatAudio1" autoplay>
+  <source src="./Radio/nam.mp3" type="audio/mpeg">
+</audio>
+<audio id="audio" autoplay>
+  <source src="./Radio/kisstherain.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
